@@ -1,0 +1,174 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  border-bottom: solid black 1px;
+}
+
+.title {
+  text-align: center;
+}
+
+#title-holder {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  flex: 0 0 20%;
+}
+
+.icons button {
+  padding: 20px;
+}
+
+h1.title {
+  margin: 0;
+  padding: 0;
+}
+
+.leftContainer{
+  flex: 0 0 20%;
+}
+
+.icons button{
+  color: inherit;
+  border: none;
+  background-color: inherit;
+}
+
+.icons button:hover{
+  background-color: rgb(214, 214, 214);
+}
+
+.light-dark .icons button:hover{
+  background-color: rgb(52, 52, 52);
+}
+
+.menu.light-dark {
+  background-color: black;
+  border-bottom-color: white;
+}
+
+i + i {
+  margin-left: 20px;
+}
+
+td {
+  border: 1px solid silver;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 2.1em;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 15;
+}
+.mainContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 15;
+}
+
+
+footer {
+  
+  width: 100%;
+  text-align: center;
+  min-height: 50px;
+  box-sizing: border-box;
+  border-top: 0.5px solid black;
+  background-color: white;
+  flex: 1;
+}
+.start-over {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-dark {
+  background-color: black;
+  color: white;
+}
+
+.hint{
+  width: 100%;
+margin: 0;
+padding: 10px 0;
+  text-align: center;
+  background-color: pink;
+ 
+}
+
+.hidden {
+  display: none;
+}
+#information{
+
+  border-left: 0.5px solid black;
+}
+
+.instructionsContainer {
+  
+  padding-left: 20px;
+  width: 50%;
+}
+#winner{
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 55px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(50, 119, 142);
+  padding-top: 15px;
+
+}
+
+#loser{
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 55px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(50, 119, 142);
+  padding-top: 15px;
+
+}
+

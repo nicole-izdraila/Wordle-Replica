@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Wordle</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="menu">
+      <div class="leftContainer"></div>
+      <div id="title-holder"><h1 class="title">Wordle</h1></div>
+      <div class="icons">
+        <button class="light-dark" id="toggleDark">&#9681;</button>
+        <button class="question-mark">&#63;</button>
+        <button onclick="infoToggle()">&#9432;</button>
+      </div>
+    </div>
+    <div class="contentContainer">
+      <div class="mainContentContainer">
+        <div id="winner" class="hidden"><p></p></div>
+        <div id="loser" class="hidden"><p></p></div>
+        <div class="congratsContainer"></div>
+        <div class="gridContainer">
+          <table id="grid">
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div class="hidden" id="imageContainer">
+          <img
+            id="image"
+            src="https://res.cloudinary.com/mkf/image/upload/v1675467141/ENSF-381/labs/congrats_fkscna.gif"
+          />
+        </div>
+        <div class="buttonContainer">
+          <button class="start-over" id="start-again">Start Over</button>
+        </div>
+      </div>
+      <div class="instructionsContainer hidden" id="information">
+        <h2>How to Play:</h2>
+        <ul>
+          <li>Start typing. The letters will appear</li>
+          <li>Remove letters with Backspace</li>
+          <li>Hit Enter/Return to submit an answer</li>
+          <li>Letters with green background are in the right spot</li>
+          <li>
+            Letters with yellow background exist in the world, but are in the
+            wrong spots
+          </li>
+          <li>Letters with gray background do not exist in the world</li>
+          <li>If you need a hint, click the ? icon</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footerContainer">
+      <div class="hintBar hidden" id="hint-container">
+        <p class="hint" id="Hint">something</p>
+      </div>
+
+      <footer id="footer">
+        <p>&#169; Nicole Izdraila 2023</p>
+      </footer>
+    </div>
+
+    <script src="./wordle.js"></script>
+  </body>
+</html>
